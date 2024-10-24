@@ -1,0 +1,50 @@
+.cabecalho-desktop{
+    background-color: $primary-normal;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.cabecalho-desktop .logo-topo-desktop{
+    width: 70px;
+    height: 70px;
+}
+
+.cabecalho-desktop .navbar-desktop ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: $white-normal;
+    margin-top: 30px;
+}
+
+.cabecalho-desktop .navbar-desktop ul a{
+    font-size: 17px ;
+}
+
+.cabecalho-mobile{
+    display: none;
+    justify-content: center;
+    height: 80px;
+    background-color: $primary-normal;
+    align-items: center;
+}
+
+.cabecalho-mobile .navbar-mobile ul{
+    display: none;
+   
+}
+
+.cabecalho-mobile .logo-topo-mobile img{
+    display: none;
+    width: 60px;
+    height: auto;
+}
+
+.botao-menu{
+    display: none;
+}
+

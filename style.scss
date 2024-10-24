@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import "partials/colors";
+@import "partials/header";
+@import "partials/layout";
+
+@font-face {
+    font-family: Nico Moji;
+    src: url(./assets/nicomoji/NicoMoji-Regular.ttf);
+}
+
+h1{
+    font-family: "Nico Moji";
+    color: #5ce1e6;
+    text-shadow: 3px 3px 5px $primary-dark;
+}
+
+p{
+    font-family: "Lexend", sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: $white-normal;
+    font-family: "Lexend", sans-serif;
+}
