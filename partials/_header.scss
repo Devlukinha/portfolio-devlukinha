@@ -22,7 +22,12 @@
 }
 
 .cabecalho-desktop .navbar-desktop ul a{
-    font-size: 17px ;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+.cabecalho-desktop .navbar-desktop ul a:hover{
+    color: #5ce1e6;
 }
 
 .cabecalho-mobile{

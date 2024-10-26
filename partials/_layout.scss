@@ -1,82 +1,177 @@
 // Layout da pagina
 .container-principal{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $gray-normal;
+    border: 3px solid black;
 }
-
-
-// Container de apresentaçao
+//Container inicial
+//textos, botoes e imagem
 #container-inicial{
-    height: 650px;
-    max-width: 1700px;
-   
+    height: 700px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 130px;
-    padding: 0px 300px;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-right: 5%;
+    background-color: $gray-normal;
 
+//Textos da home
+    .textos-apresentacao{
+        height: 80%;
+        width: 55%;
+        margin-left: 6%;
+        padding-left: 2%;
+        padding-right: 1%;
+
+        .titulo-mobile{
+
+            display: none;
+            h1{
+                font-size: 2.5rem;
+            }
+
+            span{
+                font-family: "Nico Moji";
+                color: #5ce1e6;
+                text-shadow: 3px 3px 5px $primary-dark;
+                font-size: 1.7rem;
+            }
+        }
+
+       .titulo-desktop{
+        h1{
+            font-size: 4rem;
+            width: 100%;
+        }
+       }
+        
+        p{
+            font-size: 1.4rem;
+            width: 100%;
+            margin-top: 40px;
+
+            span{
+                color: $primary-normal;
+            }
+        }
+
+        //botoes da home
+        section{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 60px;
+            
+           a{
+             border: 2px solid $primary-dark;
+             border-radius: 10px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             color: $primary-dark;
+             width: 150px;
+             height: 50px;
+             font-size: 1.2rem;
+             transition: background-color 0.5s, color 0.5s;
+
+             &:hover{
+                background-color: $primary-normal;
+                color: $white-normal;
+             }
+           }
+        }
+    }
 }
 
-// Texto Inicial
-.textos-apresentacao{
-    max-width: 3000px;
-    margin-left: 30px;
-    padding: 30px;
-   
+@media screen and (max-width: 667px){
+    #container-inicial{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        gap: 100px;
+
+        .avatar-image img{
+            width: 300px;
+            height: auto;
+            margin-top: 70px;
+            margin-bottom: 40px;
+           
+        }
+    }
+
+    .textos-apresentacao{
+        width: 90%;
+        
+        .titulo-mobile{
+            display: block;
+
+           }
+
+    }
+
+    
+}
+
+//Container Tecnologias
+//textos, imagens
+
+#container-tecnologias{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
 
     h1{
-        font-size: 4rem;
-
-    }
-   
-    p{
-        width: 100%;
-        font-size: 20px;
-        margin-top: 40px;
-        margin-bottom: 76px;
-        line-height: 2rem;
-    }
-
-    span{
-        color: $primary-normal;
-        font-weight: 800;
-    }
-
-    section{
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
-
-   section a{
-        background-color: $primary-normal;
-        width: 180px;
-        padding: 10px 20px;
         text-align: center;
-        transition: background-color 0.3s;
+        margin-top: 50px;
+        font-size:  3rem;
+    }
+   
+    
+}
+
+.organizar-tecnologias{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .textos-tecnologia{
+        width: 46%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 1.4rem;
+        }
     }
 }
+  
 
-.textos-apresentacao section a:hover{
-  background-color: $primary-dark;
+.image-tecnologias{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.avatar-image img{
-    width: 467px;
-    height: 467px;
-   
-}
 
+/*
 //Container das tecnologias
 
 #container-tecnologias{
     height: 750px;
-    width: 100%;
+   
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -129,3 +224,4 @@
     
 }
 
+*/
