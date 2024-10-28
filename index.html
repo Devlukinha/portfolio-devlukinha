@@ -1,171 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio DevLukinha</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecalho-desktop">
-      <div class="logo-topo-desktop"><img src="./assets/imagens/logo-correto.png" alt="logo Dev Lukinha" class="logo-inicio"></div>
-      <nav class="navbar-desktop">
-        <ul>
-          <a href="#container-tecnologias">Tecnologias</a>
-          <a href="#projetos-pessoais">Projetos</a>
-          <a href="#sobre-mim">Contate-me</a>
-        </ul>
-      </nav>
-      <button class="botao-menu">
-        <img src="imagem clicavel" alt="imagem clicavel">
-      </button>
-    </header>
+  <header>
+    <div class="interface">
 
-    <header class="cabecalho-mobile">
-      <div class="logo-topo-mobile"><img src="./assets/imagens/logo-correto.png" alt="logo Dev Lukinha" class="logo-inicio"></div>
-      <nav class="navbar-mobile">
-        <ul>
-          <a href="">Tecnologias</a>
-          <a href="">Projetos</a>
-          <a href="">Contate-me</a>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="container-principal">
-      <div id="container-inicial">
-        <div class="textos-apresentacao">
-          <div  class="titulo-desktop">
-            <h1>Desenvolvedor</h1>
-            <h1>Front End</h1>
-          </div>
-
-          <div class="titulo-mobile">
-            <h1>Desenvolvedor</h1>
-            <span>Front End</span>
-          </div>
-          <p>
-            Olá, me chamo Lucas, sou estudante de desenvolvimento front-end e
-            entusiasta em criar experiências digitais envolventes. Estou sempre
-            em busca de oportunidades que me permitam expandir meu conhecimento
-            e impactar positivamente os usuários. E hoje, como posso
-            transformar suas <span>ideias</span> em <span>realidade?</span>
-          </p>
-         <section>
-           <a href="">Linkedin</a>
-           <a href="">Github</a>
-           <a href="">Lattes</a>
-         </section>
-        </div>
-
-        <div class="avatar-image">
-          <img src="./assets/imagens/Desenvolvedor_Front_End-removebg-preview.png" alt="">
-        </div>
+      <div class="logo">
+        <a href="">
+          <img src="./imagens/logo.png" alt="">
+        </a>
       </div>
       
-      <hr>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Tecnologias</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Projetos</a></li>
+        </ul>
+    </nav>
 
-      <div id="container-tecnologias">
-        <h1>Minhas Tecnologias</h1>
+    <div class="btn-contato">
+      <a href="#">
+        <button>Contato</button>
+      </a>
+    </div>
 
-        <div class="organizar-tecnologias">
-          <div class="image-tecnologias">
-            <img src="./assets/imagens/WEB DEVELOPMENT.png" alt="" class="linguagens">
+    </div>
+  </header> 
+
+  <main>
+    <section class="topo-do-site">
+      <div class="interface">
+        <div class="flex">
+          <div class="txt-topo-site">
+            <h1>DESENVOLVEDOR FRONT-END</h1>
+            <p> Olá, me chamo Lucas, sou estudante de desenvolvimento front-end e
+              entusiasta em criar experiências digitais envolventes. Estou sempre
+              em busca de oportunidades que me permitam expandir meu conhecimento
+              e impactar positivamente os usuários. E hoje, como posso
+              transformar suas <span>ideias</span> em <span>realidade?</span></p>
+
+            <div class="botoes-topo-site">
+              <div class="btn-contato">
+                  <a href="#">
+                      <button>Linkedin</button>
+                  </a>
+              </div>
+              <div class="btn-contato">
+                <a href="#">
+                    <button>Git Hub</button>
+                </a>
+             </div>
+            </div>
+
           </div>
-          
-            <div class="textos-tecnologia">
-              <p>
-                No desenvolvimento de sites, utilizo HTML, CSS e JavaScript para criar
-              experiências digitais envolventes. O Bootstrap facilita a construção de
-              layouts responsivos de forma ágil, enquanto  o Node.js me permite testar
-              e executar meu código JavaScript no lado do servidor, garantindo uma integração
-               eficiente. Essa combinação de tecnologias me capacita a entregar projetos de
-              alta qualidade e com excelente performance.
-              </p>
-            </div>
-          
-        </div>
-        
-      </div>
 
-      <hr>
-
-      <section id="projetos-pessoais">
-
-        <h1>Meus Projetos</h1>
-
-
-       <div class="projetos">
-        <section class="fileira-projetos-1">
-          <div class="projeto">
-            <img src="./assets/imagens/barbearia-correto.png" alt="">
-            </div>
-            <div class="projeto">
-              <img src="./assets/imagens/casa-do-dragao-correto.png" alt="">
-            </div>
-            <div class="projeto">
-              <img src="./assets/imagens/pokedev-correto.png" alt="">
-            </div>
-        </section>
-
-          <section class="fileira-projetos-2">
-            <div class="projeto">
-              <img src="./assets/imagens/x-dev-correto.png" alt="">
-            </div>
-            <div class="projeto">
-              <img src="./assets/imagens/jogo-atingos-coreto.png" alt="">
-            </div>
-            <div class="projeto">
-              <img src="./assets/imagens/tinf-manutencoes-correto.png" alt="">
-            </div>
-          </section>
-       </div>
-
-        </section>
-
-      <hr>
-
-      <div id="sobre-mim">
-        <h1>Sobre mim</h1>
-        <div class="foto-perfil">
-          <img src="./assets/imagens/perfil para o portfolio.jpg" alt="">
-        </div>
-
-        <div class="texto-biografia">
-          <p>
-            Meu nome é Lucas Henrique, e atualmente sou estudante do Curso Técnico em Informática no
-            IFTM- Campus Patrocínio MG. Tenho uma grande paixão por programação, principalmente em 
-            desenvolvimento web, o que me motiva a explorar constantemente novos conhecimentos e desafios.
-            Nos meus momentos livres gosto de desenhar, jogar futebol, andar de bike, atividades que me ajudam 
-            a relaxar e a me conectar com o que amo. Além disso, valorizo muito as amizades que construo durante
-            essa jornada acadêmica, que enriquecem ainda mais minha experiência.
-          </p>
+          <div class="img-topo-site">
+            <img src="imagens/avatar-redimensionado.png" alt="">
+          </div>
         </div>
       </div>
-
-      <hr>
-      <div class="formulario-contato">
-        <h1>Como eu posso te ajudar?</h1>
-        <form class="formulario">
-          <label for="nome">Nome:</label>
-          <input type="text"> <br>
-          <label for="email">Email:</label>
-          <input type="email"> <br>
-          <label for="numero">Número:</label>
-          <input type="number"> <br>
-          <label for="mensagem">Mensagem:</label> <br>
-          <textarea name="" id=""></textarea>
-        </form>
-        <button>Enviar</button>
-      </div>
-    </main>
-    <footer>
-      <img src="imagens/devlukinha (2).png" alt="">
-      <p>Todos os direitos foram reservados</p>
-      <p>@Copywrite 2024</p>
-    </footer>
+    </section>
+  </main>
 </body>
 </html>
