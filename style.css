@@ -122,3 +122,31 @@ section.topo-do-site .flex{
   display: flex;
   gap: 40px;
 }
+
+
+/*ESTILO DA SESSÃO DAS TECNOLOGIAS*/
+
+section.tecnologias{
+  padding: 40px 8%;
+}
+
+section.tecnologias .flex{
+  align-items: center;
+  justify-content: center;
+}
+
+.tecnologias h1{
+  font-family: 'Nico Moji', sans-serif;
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+}
+
+.tecnologias h1 span{
+  font-family: 'Nico Moji', sans-serif;
+  color: #00f6ff;
+}
+
+.linguagens-programacao{
+  
+}
