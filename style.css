@@ -147,6 +147,30 @@ section.tecnologias .flex{
   color: #00f6ff;
 }
 
-.linguagens-programacao{
-  
+.linguagens-programacao {
+ flex-direction: column;
+ gap: 30px;
+ margin-top: 40px;
+}
+
+.fileira-linguagens button {
+  color: #00f6ff;
+  font-size: 60px;
+  background-color: #00001b;
+  border: 2px solid #00f6ff;
+  border-radius: 20px;
+  padding: 20px 40px;
+  margin-right: 20px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.fileira-linguagens button:hover{
+  color: #00001b;
+  background-color: #00f6ff;
+  transform: scale(1.05);
+}
+
+.fileira-linguagens button i{
+  width: 90px;
 }
