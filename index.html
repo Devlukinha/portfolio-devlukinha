@@ -16,21 +16,21 @@
 
       <div class="logo">
         <a href="">
-          <img src="./imagens/logo.png" alt="" width="50px">
+          <img src="./imagens/logo-redimensionado.png" alt="" width="50px">
         </a>
       </div>
       
       <nav class="menu-desktop">
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Tecnologias</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#tec">Tecnologias</a></li>
+          <li><a href="#sob">Sobre</a></li>
+          <li><a href="#proj">Projetos</a></li>
         </ul>
     </nav>
 
     <div class="btn-contato">
-      <a href="#">
+      <a href="#formu">
         <button>Contato</button>
       </a>
     </div>
@@ -40,7 +40,7 @@
 
   <main>
     <!--Sessão Inicial do site-->
-    <section class="topo-do-site">
+    <section class="topo-do-site" id="topo">
       <div class="interface">
         <div class="flex">
           <div class="txt-topo-site">
@@ -74,9 +74,9 @@
     </section>  <!-- Final Sessão Inicial do site-->
 
     <!--Sessao das tecnologias-->
-    <section class="tecnologias">
+    <section class="tecnologias" id="tec">
       <div class="interface">
-        <h1>MINHAS <span>TECNOLOGIAS</span></h1>
+        <h2>MINHAS <span>TECNOLOGIAS</span></h2>
         <div class="flex">
          <div class="linguagens-programacao flex">
 
@@ -100,9 +100,9 @@
       </div>
     </section>
     <!--Sessao dos projetos-->
-    <section class="projetos">
+    <section class="projetos" id="proj">
       <div class="interface">
-        <h1>MEUS <span>PROJETOS</span></h1>
+        <h2>MEUS <span>PROJETOS</span></h2>
         <div class="cards flex">
           <div class="card flex">
             <img src="imagens/casa-dragao.png" alt="">
@@ -170,7 +170,7 @@
       </div>
     </section>
     <!--Sessao sobre mim-->
-    <section class="sobre">
+    <section class="sobre" id="sob">
       <div class="interface">
         <div class="container-img-txt flex">
           <img src="imagens/perfil para o portfolio-2.jpg" alt="">
@@ -191,6 +191,21 @@
               </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!--Sessao do formulario-->
+    <section class="formulario flex" id="formu">
+      <div class="interface">
+        <h2>BORA TROCAR UMA <span>IDEIA?</span></h2>
+        <form action="">
+          <input type="text" placeholder="Seu nome" required>
+          <input type="text" placeholder="Seu email" required>
+          <input type="number" placeholder="Seu número" required>
+          <textarea name="" id="" placeholder="Sua mensagem"></textarea>
+          <div class="btn-enviar">
+            <input type="submit" value="ENVIAR">
+        </div>
+        </form>
       </div>
     </section>
   </main>
