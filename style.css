@@ -314,7 +314,7 @@ section.sobre{
 
 section.formulario{
   padding: 40px 8%;
-  box-shadow: 8px 8px 18px #00f6ff;
+  box-shadow: 8px 8px 18px #00f7ff3d;
 }
 
 section.formulario .flex{
@@ -386,4 +386,50 @@ form .btn-enviar input{
 form .btn-enviar input:hover{
   box-shadow: 0px 0px 18px #00ff0896;
   transform: scale(1.05);
+}
+
+footer{
+  padding: 10px 4%;
+  background-color: #01013dfa;
+}
+
+
+
+footer .flex{
+  flex-direction: column;
+  align-items: center;
+
+}
+
+footer .sociais.flex{
+  flex-direction: row;
+  gap: 30px;
+  margin: 8px 0;
+}
+
+.sociais.flex a{
+  background-color: #00f6ff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: .2s;
+}
+
+.sociais.flex a:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px #00f6ff;
+}
+
+.sociais.flex a i{
+  font-size: 19px;
+  color: #00001b;
+}
+
+.flex a{
+  color: #00f6ff;
+  text-decoration: none;
+}
+
+.flex p{
+  color: white;
+  font-size: 12px;
 }
