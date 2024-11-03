@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio DevLukinha</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reponsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
   <header>
     <div class="interface">
 
-      <div class="logo">
+      <div class="logo" id="logo-cabecalho">
         <a href="">
           <img src="./imagens/logo-redimensionado.png" alt="" width="80px">
         </a>
@@ -31,10 +32,29 @@
     </nav>
 
     <div class="btn-contato">
-      <a href="#formu">
+      <a href="https://w.app/6rbcfe">
         <button>Contato</button>
       </a>
     </div>
+
+    <div class="btn-abrir-menu" id="btn-menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!--MENU MOBILE-->
+    <div class="menu-mobile" id="menu-mobile">
+      <div class="btn-fechar">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <nav>
+          <ul>
+            <li><a href="#topo">Início</a></li>
+            <li><a href="#tec">Tecnologias</a></li>
+            <li><a href="#sob">Sobre</a></li>
+            <li><a href="#proj">Projetos</a></li>
+          </ul>
+      </nav>
+  </div>
 
     </div>
   </header> 
@@ -46,10 +66,7 @@
         <div class="flex">
           <div class="txt-topo-site">
             <h1>DESENVOLVEDOR FRONT-END</h1>
-            <p> Olá, me chamo Lucas, sou estudante de desenvolvimento front-end e
-              entusiasta em criar experiências digitais envolventes. Estou sempre
-              em busca de oportunidades que me permitam expandir meu conhecimento
-              e impactar positivamente os usuários. E hoje, como posso
+            <p> Você está pronto para levar seu projeto ao próximo nível? Estou aqui para ajudar a transformar suas ideias em experiências digitais inesquecíveis. Como desenvolvedor front-end, crio designs impactantes que capturam a atenção e proporcionam uma navegação fluida. Juntos, podemos construir algo que não apenas atenda, mas supere as expectativas dos seus usuários. E hoje, como posso
               transformar suas <span>ideias</span> em <span>realidade?</span></p>
 
             <div class="botoes-topo-site">
@@ -110,7 +127,7 @@
             <h3>A CASA DO DRAGAO</h3>
             <p>Carrosel  A Casa do Drago feito na imersao 
               do canal Dev em Dobro usando HTML,CSS e JS. <br>
-              <a href="https://devlukinha.github.io/carrossel-casa-do-dragao/"><button>ver projeto</button></a>
+              <a href="https://devlukinha.github.io/carrossel-casa-do-dragao/" target="_blank"><button>ver projeto</button></a>
             </p>
            
           </div>
@@ -120,7 +137,7 @@
             <h3>POKEDEVS</h3>
             <p>Cards de Pokemons na versao programadores feito na imersao 
               do canal Dev em Dobro usando HTML,CSS e JS. <br>
-              <a href="https://devlukinha.github.io/pokedevs/"><button>ver projeto</button></a>
+              <a href="https://devlukinha.github.io/pokedevs/" target="_blank"><button>ver projeto</button></a>
             </p>
             
           </div>
@@ -130,7 +147,7 @@
             <h3>BARBEARIA FICTÍCIA</h3>
             <p>Landing Page de uma barbearia fictícia com sessoes de 
               preços, cortes e endereço usando HTML,CSS,Saas e JS. <br>
-              <a href="https://devlukinha.github.io/Barbearia-ficticia/"><button>ver projeto</button></a>
+              <a href="https://devlukinha.github.io/Barbearia-ficticia/" target="_blank"><button>ver projeto</button></a>
             </p>
             
           </div>
@@ -143,7 +160,7 @@
             <p>Lista de tarefas feita, pode cadastrar e desmarcar
               metas, feita na imersao da Rockseat
               usando HTML, CSS e JS. <br>
-              <a href="https://devlukinha.github.io/agenda-digital/"><button>ver projeto</button></a>
+              <a href="https://devlukinha.github.io/agenda-digital/" target="_blank"><button>ver projeto</button></a>
             </p>
             
           </div>
@@ -153,7 +170,7 @@
             <h3>X-DEVS</h3>
             <p>Carrosel dos X-Mans na versao programadores feito 
               na imersao do canal Dev em Dobro usando HTML,CSS e JS. <br>
-              <a href="https://devlukinha.github.io/cards-x-man/"><button>ver projeto</button></a>
+              <a href="https://devlukinha.github.io/cards-x-man/" target="_blank"><button>ver projeto</button></a>
             </p>
            
           </div>
@@ -163,7 +180,7 @@
             <h3>JOGOS ANTIGOS</h3>
             <p>Site sobre jogos antigos para matéria lab-programacao 2,
                usando HTML, BOOTSTRAP, CSS e JS. <br>
-              <a href="https://devlukinha.github.io/jogos-antigos/"><button>ver projeto</button></a>
+              <a href="https://devlukinha.github.io/jogos-antigos/" target="_blank"><button>ver projeto</button></a>
             </p>
            
           </div>
@@ -176,7 +193,7 @@
         <div class="container-img-txt flex">
           <img src="imagens/perfil para o portfolio-2.jpg" alt="">
           <div class="texto-sobre-mim">
-            <h2>PRAZER, SOU O <br><span>LUCAS</span></h2>
+            <h2>PRAZER, SOU O <span>LUCAS</span></h2>
             <p>
               Oi! Sou Lucas Henrique Borges, tenho 17 anos e estudo no IFTM, onde estou cursando técnico em informática. 
               Sou um apaixonado por tecnologia e atualmente me dedico a desenvolver minhas habilidades como desenvolvedor web. 
@@ -186,9 +203,9 @@
                 para ver onde essa jornada me levará! 
               </p>
               <div class="redes-sociais flex">
-                <a href="https://www.instagram.com/lucas_henrib/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/Devlukinha"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lucas-henrique-borges/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/lucas_henrib/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Devlukinha" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lucas-henrique-borges/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
               </div>
           </div>
         </div>
@@ -201,10 +218,10 @@
         <form action="">
           <input type="text" placeholder="Seu nome" required>
           <input type="text" placeholder="Seu email" required>
-          <input type="number" placeholder="Seu número" required>
+          <input type="number" id="numero" placeholder="Seu número" required>
           <textarea name="" id="" placeholder="Sua mensagem"></textarea>
           <div class="btn-enviar">
-            <input type="submit" value="ENVIAR">
+            <a href=""><button>Enviar</button></a>
         </div>
         </form>
       </div>
@@ -230,6 +247,6 @@
       </div>
     </div>
   </footer>
-  
+  <script src="script.js"></script>
 </body>
 </html>

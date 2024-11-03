@@ -28,22 +28,6 @@ body{
   display: flex;
 }
 
-.btn-contato button{
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #00f6ff;
-  border: 0;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: .2s;
-}
-
-.btn-contato button:hover{
-  box-shadow: 0px 0px 8px #00f6ff;
-  transform: scale(1.05);
-}
-
 header{
   padding: 40px 4%;
 }
@@ -55,7 +39,7 @@ header > .interface{
 }
 
 header a{
-   font-family: "Lexend", sans-serif;
+  font-family: "Lexend", sans-serif;
   color: #fff;
   text-decoration: none;
   display: inline-block;
@@ -75,6 +59,77 @@ header nav.menu-desktop ul li{
   display: inline-block;
   padding: 0 40px;
 }
+
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00f6ff;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-contato button:hover{
+  box-shadow: 0px 0px 8px #00f6ff;
+  transform: scale(1.05);
+}
+
+/*MENU MOBILE*/
+.btn-abrir-menu i{
+  color:#00001b;
+  font-size: 40px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-mobile{
+  background-color: #0000008f;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+  width: 70%;
+}
+
+.menu-mobile .btn-fechar{
+  padding: 20px 4%;
+}
+
+.menu-mobile .btn-fechar i{
+  color: #00f6ff;
+  font-size: 30px;
+}
+
+.menu-mobile nav ul{
+  text-align: right;
+}
+
+.menu-mobile nav ul li a{
+  color: #fff;
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 8%;
+  display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+  background-color: #00f6ff;
+  color: #000;
+  
+}
+
 
 /*TOPO DO SITE*/
 
@@ -105,6 +160,7 @@ section.topo-do-site .flex{
 .topo-do-site .txt-topo-site p span{
   color: #00f6ff;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .topo-do-site .img-topo-site img{
@@ -257,7 +313,7 @@ section.projetos{
 
 /*SESSAO DO SOBRE MIM*/
 section.sobre{
-  padding: 40px 8%;
+  padding: 80px 4%;
 
 }
 
@@ -369,31 +425,31 @@ form textarea{
   max-height: 200px;
 }
 
-form .btn-enviar{
-  margin-top: 20px;
-  text-align: center;
-}
-
-form .btn-enviar input{
-  width: 120px;
-  background-color: #00f6ff;
-  color: #000;
-  font-family: 'Lexend',sans-serif;
+.btn-enviar button{
+  padding: 10px 40px;
+  font-size: 18px;
   font-weight: 600;
+  background-color: #00f6ff;
+  border: 0;
+  border-radius: 30px;
   cursor: pointer;
   transition: .2s;
 }
-form .btn-enviar input:hover{
-  box-shadow: 0px 0px 18px #00ff0896;
+
+.btn-enviar button:hover{
+  box-shadow: 0px 0px 8px #00f6ff;
   transform: scale(1.05);
+}
+
+form .btn-enviar{
+  margin-top: 20px;
+  text-align: center;
 }
 
 footer{
   padding: 10px 4%;
   background-color: #01013dfa;
 }
-
-
 
 footer .flex{
   flex-direction: column;
@@ -432,4 +488,95 @@ footer .sociais.flex{
 .flex p{
   color: white;
   font-size: 12px;
+}
+
+@media screen and (max-width: 1220px){
+ /*GERAL*/
+  .flex{
+    flex-direction: column;
+  } 
+
+  /*CABECALHO*/
+  .menu-desktop, .btn-contato{
+    display: none;
+  }
+
+  .btn-abrir-menu i{
+    color: #00f6ff;
+  }
+
+  /*TOPO DO SITE*/
+  .topo-do-site .flex{
+    flex-direction: column-reverse;
+  }
+
+  section.topo-do-site{
+    padding: 20px 8%;
+  }
+
+  .topo-do-site .txt-topo-site h1{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .topo-do-site .img-topo-site img{
+    width: 100%;
+  }
+
+  section.topo-do-site .flex{
+    gap: 40px;
+ }
+  /*TECNOLOGIAS*/
+  section.tecnologias h2{
+    font-size: 26px;
+  }
+
+  .linguagens-programacao {
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 40px;
+   }
+
+   .fileira-linguagens button {
+    padding: 15px 20px;
+    margin-top: 20px;
+  }
+
+  .fileira-linguagens button i{
+    width: 80px;
+  }
+
+  /*SOBRE*/
+
+  section.sobre{
+    padding: 40px 8%;
+  }
+  .container-img-txt{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .container-img-txt img{
+    width: 300px;
+  }
+
+  .container-img-txt h2{
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .container-img-txt h2 span{
+    font-size: 33px;
+  }
+
+  .container-img-txt p{
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .redes-sociais.flex{
+    flex-direction: row;
+  }
+
 }
