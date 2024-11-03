@@ -578,4 +578,9 @@ footer .sociais.flex{
     flex-direction: row;
   }
 
+  /*FORMULARIO*/
+  .formulario h2{
+    text-align: center;
+    font-size: 26px;
+  }
 }
