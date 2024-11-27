@@ -32,10 +32,11 @@ header{
   padding: 40px 4%;
 }
 
-header > .interface{
+header > .cabecalho{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 150px;
 }
 
 header a{
@@ -45,6 +46,7 @@ header a{
   display: inline-block;
   transition: .2s ;
 }
+
 
 header nav.menu-desktop a:hover{
   color: #00f6ff;
@@ -78,7 +80,7 @@ header nav.menu-desktop ul li{
 }
 
 /*MENU MOBILE*/
-.btn-abrir-menu i{
+ .btn-abrir-menu i{
   color: #00001b;
   font-size: 40px;
   cursor: pointer;
@@ -127,7 +129,7 @@ header nav.menu-desktop ul li{
   background-color: #00f6ff;
   color: #000;
   
-}
+} 
 
 
 /*TOPO DO SITE*/
@@ -494,6 +496,10 @@ footer .sociais.flex{
   .flex{
     flex-direction: column;
   } 
+
+  header > .cabecalho{
+    margin-left: 20px;
+  }
 
   /*CABECALHO*/
   .menu-desktop, .btn-contato{
